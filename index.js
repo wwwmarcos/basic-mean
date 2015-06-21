@@ -51,9 +51,6 @@ app.put("/app/editar", function(req, res){
 	});
 });
 
-/* ____________________ /rotas ____________________ */
-
-
 app.use(express.static(__dirname + '/webapp'));
 
 app.listen(3000)
