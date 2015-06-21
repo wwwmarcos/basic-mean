@@ -1,0 +1,58 @@
+	<!DOCTYPE html>
+<html ng-app="myApp">
+<meta charset="utf-8">
+<head>
+	<title>Teste</title>
+	
+	<!--materialize css-->
+	<link rel="stylesheet" type="text/css" href="materialize/css/materialize.min.css">
+	<!--custom css-->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- menu -->
+	<nav class="light-green lighten-1" role="navigation">
+	    <div class="nav-wrapper container">
+	    	<ul class="right hide-on-med-and-down">
+		    	<li><a href="#/"><b>Home</b></a></li>
+		    	<li><a href="#/cadastro">Cadastro</a></li>
+		    	<li><a href="#/listagem">Listagem</a></li>
+		    </ul>
+ 	<!-- /menu -->
+ 	<!-- mobile menu -->
+		    <ul id="nav-mobile" class="side-nav">
+			    <li><a href="#/">Home</a></li>
+		    	<li><a href="#/cadastro">Cadastro</a></li>
+		    	<li><a href="#/listagem">Listagem</a></li>
+		    </ul>
+	    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	    </div>
+ 	</nav>
+ 	<!-- /mobile menu -->
+
+	<div class="container">
+	 	<div ui-view><!--...--></div>
+	</div><!--/container-->
+
+</body>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="js/myApp.js"></script>
+	<script type="text/javascript" src="js/routes.js"></script>
+	
+	<script type="text/javascript" src="src/cadastro/cadastroController.js"></script>
+	<script type="text/javascript" src="src/cadastro/cadastroService.js"></script>
+	
+	<script type="text/javascript" src="src/listagem/listagemController.js"></script>
+	<script type="text/javascript" src="src/listagem/listagemService.js"></script>
+
+	<script type="text/javascript" src="src/editar/editarController.js"></script>
+	<script type="text/javascript" src="src/editar/editarService.js"></script>
+	
+	<!--Jquery-->
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<!---materialize js-->
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<script type="text/javascript">	(function($){ $(function(){$('.button-collapse').sideNav();});})(jQuery);</script>
+
+</html>

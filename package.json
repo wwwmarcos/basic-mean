@@ -1,0 +1,30 @@
+{
+  "name": "primeiroa",
+  "version": "0.1.3",
+  "description": "Tentanto aprender essas paradas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.8",
+    "mongoose": "~4.0.5",
+    "body-parser": "~1.13.1"
+  },
+  "engines": {
+    "node": "0.12.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcosflorencio/basic-mean.git"
+  },
+  "keywords": [
+    "node",
+    "mean",
+    "node",
+    "angularjs",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
