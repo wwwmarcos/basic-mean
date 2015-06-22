@@ -22,5 +22,5 @@ var alunoShema = new Schema({
 	curso: String
 });
 
-module.exports = mongoose.model('Alunos', alunoShema);
+module.exports = mongoose.model('Aluno', alunoShema);
 
