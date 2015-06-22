@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-var aluno = require('./Schema.js');
+var aluno = require('./schema.js');
 
 app.get('/', function (req, res){
 	res.sendFile(__dirname + '/webapp/index.html');
