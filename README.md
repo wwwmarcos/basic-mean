@@ -4,6 +4,7 @@ Exemplo de applicação MEAN (MongoDB, Express, Angular.js e Node.js) para contr
 
 ### Iniciando.
 
+
 > Clone o repositorio
 
 > cd basic-mean
@@ -11,3 +12,7 @@ Exemplo de applicação MEAN (MongoDB, Express, Angular.js e Node.js) para contr
 > npm install
 
 > node index.js
+
+
+Abra no seu navegador o endereço `http://localhost:3000`
+
