@@ -5,7 +5,7 @@ Exemplo de applicação MEAN (MongoDB, Express, Angular.js e Node.js) para contr
 ### Iniciando.
 
 
-> Clone o repositorio
+> git clone https://github.com/marcosflorencio/basic-mean.git
 
 > cd basic-mean
 
