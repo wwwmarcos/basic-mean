@@ -1,6 +1,6 @@
 # basic-mean
 
-Exemplo de applicação MEAN (MongoDB, Express, Angular.js e Node.js) para controle de alunos e seus respectivos cursos.
+Exemplo de aplicação MEAN (MongoDB, Express, Angular.js e Node.js) para controle de alunos e seus respectivos cursos.
 
 
 ### Iniciando.
