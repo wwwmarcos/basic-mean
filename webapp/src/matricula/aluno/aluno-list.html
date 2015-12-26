@@ -1,0 +1,30 @@
+<form class="col s12">
+  <div id='table' class="table">
+    <table class="striped">
+      <thead>
+        <tr>
+          <th data-field="Nome">Nome</th>
+          <th data-field="Curso">Curso</th>
+          <th data-field="Curso">Editar</th>
+          <th data-field="Curso">Apagar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-ng-repeat="a in vm.alunos track by $index">
+          <td>{{a.nome}}</td>
+          <td>{{a.curso}}</td>
+          <td>
+            <a data-ng-click="vm.edit(a._id)" class="btn-floating btn-medium waves-effect waves-light blue">
+             <i class="mdi-content-create"></i>
+            </a>
+          </td>
+          <td>
+            <a data-ng-click="vm.deleteAluno(a._id)" class="btn-floating btn-small waves-effect waves-light red">
+              <i class="mdi-content-clear"></i>
+            </a> 
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</form>

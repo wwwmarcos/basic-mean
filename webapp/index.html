@@ -1,5 +1,5 @@
 	<!DOCTYPE html>
-<html ng-app="myApp">
+<html data-ng-app="app">
 <meta charset="utf-8">
 <head>
 	<title>Teste</title>
@@ -15,15 +15,15 @@
 	    <div class="nav-wrapper container">
 	    	<ul class="right hide-on-med-and-down">
 		    	<li><a href="#/"><b>Home</b></a></li>
-		    	<li><a href="#/cadastro">Cadastro</a></li>
-		    	<li><a href="#/listagem">Listagem</a></li>
+		    	<li><a href="#/aluno/create">Cadastro</a></li>
+		    	<li><a href="#/aluno/list">Listagem</a></li>
 		    </ul>
  	<!-- /menu -->
  	<!-- mobile menu -->
 		    <ul id="nav-mobile" class="side-nav">
 			    <li><a href="#/">Home</a></li>
-		    	<li><a href="#/cadastro">Cadastro</a></li>
-		    	<li><a href="#/listagem">Listagem</a></li>
+		    	<li><a href="#/aluno/create">Cadastro</a></li>
+		    	<li><a href="#/aluno/list">Cadastro</a></li>
 		    </ul>
 	    <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 	    </div>
@@ -37,18 +37,21 @@
 </body>
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
-	<script type="text/javascript" src="js/myApp.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
 	<script type="text/javascript" src="js/routes.js"></script>
 	
-	<script type="text/javascript" src="src/cadastro/cadastroController.js"></script>
-	<script type="text/javascript" src="src/cadastro/cadastroService.js"></script>
-	
-	<script type="text/javascript" src="src/listagem/listagemController.js"></script>
-	<script type="text/javascript" src="src/listagem/listagemService.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.controllers.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.services.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.factories.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.directives.js"></script>
+	<script type="text/javascript" src="src/matricula/matricula-module.filters.js"></script>
 
-	<script type="text/javascript" src="src/editar/editarController.js"></script>
-	<script type="text/javascript" src="src/editar/editarService.js"></script>
-	
+	<script type="text/javascript" src="src/matricula/aluno/aluno-create.controller.js"></script>
+	<script type="text/javascript" src="src/matricula/aluno/aluno-edit.controller.js"></script>
+	<script type="text/javascript" src="src/matricula/aluno/aluno-list.controller.js"></script>
+	<script type="text/javascript" src="src/matricula/aluno/aluno.service.js"></script>
+
 	<!--Jquery-->
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<!---materialize js-->

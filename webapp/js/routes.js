@@ -1,28 +1,30 @@
-myApp.config(function($stateProvider, $urlRouterProvider) {
+(function (){ 
+ 'use strict' 
+app 
+  .config(config);
 
+config.$inject = ['$stateProvider', '$urlRouterProvider', '$httpProvider'];
+function config($stateProvider, $urlRouterProvider, $httpProvider) {
+  //$httpProvider.interceptors.push('HttpInterceptor');
   $stateProvider
-    
-    .state('home', {
-      url: "/",
+    .state('app', {
+      abstract: true,
+      resolve: {
+        resolve : function(){
+            return {};
+        },
+      },
+      controller: controller,
+      template: '<ui-view/>'
     })
 
-    .state('cadastro', {
-      url: '/cadastro',
-      templateUrl: 'src/cadastro/cadastro.html',
-      controller: 'cadastroController'
-    })
 
-    .state('editar', {
-      url: '/editar/:_id',
-      templateUrl: 'src/editar/editar.html',
-      controller: 'editarController'
-    })
+  controller.$inject = ['$rootScope', '$state'];
+  function controller($rootScope, $state) {
+  
+  }
 
-    .state('listagem', {
-      url: '/listagem',
-      templateUrl: 'src/listagem/listagem.html',
-      controller: 'listagemController'
-    })
+  $urlRouterProvider.otherwise('/');
 
-    $urlRouterProvider.otherwise("/");
-});
+}
+}());

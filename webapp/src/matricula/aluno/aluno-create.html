@@ -1,0 +1,15 @@
+<form class="form-cadastro" name="formAlunoCreate" data-ng-submit="vm.save()" novalidate>
+  <div class="row">
+    <div class="col s6">
+      <i class="mdi-action-account-circle prefix small"></i>
+      <input data-ng-model="vm.aluno.nome" id="icon_prefix" type="text" class="validate" >
+      <label for="icon_prefix">Nome</label>
+    </div>
+    <div class="col s6">
+      <i class="mdi-social-school prefix small"></i>
+      <input data-ng-model="vm.aluno.curso" id="icon_prefix" type="text" class="validate" >
+      <label for="icon_prefix">Curso</label>
+    </div>
+  </div>
+  <input type="submit" class="btn waves-effect waves-light">
+</form>

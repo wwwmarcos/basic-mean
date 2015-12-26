@@ -16,10 +16,15 @@ app.get('/', function (req, res){
 })
 
 app.post('/app/cadastrar', function (req, res) {
-	var newAluno = new aluno({nome: req.body.nome, curso: req.body.curso});
+	var newAluno = new aluno(
+		{ nome: req.body.nome, 
+			curso: req.body.curso
+		});
+
 	newAluno.save(function(err) {
 		if (err) throw err;
-	}); 
+	});
+	 
 	res.json({ message: 'Aluno recebido', data: req.body.nome});
 })
 
