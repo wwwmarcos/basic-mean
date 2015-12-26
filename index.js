@@ -1,7 +1,8 @@
-var bodyParser = require('body-parser');
-var http 	   = require('http'); 
-var express    = require('express')
-var app 	   = express();
+var bodyParser = require('body-parser')
+	,	http 	   	 = require('http') 
+	,	express    = require('express')
+	,	app 	     = express()
+	,	aluno 	   = require('./Schema.js');	
 
 app.use(bodyParser.json());
 
@@ -9,7 +10,6 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-var aluno = require('./schema.js');
 
 app.get('/', function (req, res){
 	res.sendFile(__dirname + '/webapp/index.html');
